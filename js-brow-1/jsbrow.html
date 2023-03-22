@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mayúsculas</title>
+  </head>
+  <body>
+    <label for="texto">Escribe algo:</label>
+    <input type="text" id="texto">
+    <p id="resultadoTexto"></p>
+    <script>
+      const input = document.getElementById('texto');
+      const resultadoTexto = document.getElementById('resultadoTexto');
+
+      input.addEventListener('input', function() {
+        const texto = input.value.toUpperCase();
+        resultadoTexto.textContent = texto;
+      });
+    </script>
+  </body>
+</html>
